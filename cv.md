@@ -6,11 +6,13 @@
    Phone: +7(908)582-82-96\
    E-mail: dimikh@mail.ru\
    [vk](https://vk.com/dimikh)\
-   [Telegram](https://t.me/m5production86)  
+   [Telegram](https://t.me/m5production86)\
+   [Discord](@m5production#6990)  
 
 ## Notes about myself  
-I've been working as a technical interpreter and translator for 10 years in [Nuclear physics institute](http://vniitf.ru/en). I was the first among my collegues who mastered *Computer Assisted Translation (CAT) tools*, namely [memoQ](https://www.memoq.com/). I used to study this technology myself through reading docs and guidelines. I used to work at various projects concerning physical security, spent nuclear fuel disposal and reprocessing, space protection of the Earth etc. Finally I reached the position of a team leader.  
-At the same time I was always fond of technical stuff and computer technologies. At some point, while dealing with Arduino, I came up with the idea that I lack coding skills and knowledge of algorithms. That's when I fell in love with coding and solving various coding problems.  
+   I've been working as a technical interpreter and translator for 10 years in [Nuclear physics institute](http://vniitf.ru/en). I was the first among my collegues who mastered *Computer Assisted Translation (CAT) tools*, namely [memoQ](https://www.memoq.com/). I used to study this technology myself through reading docs and guidelines. I used to work at various projects concerning physical security, spent nuclear fuel disposal and reprocessing, space protection of the Earth etc. where I faced the necessety to evolve and learn new stuff. Finally I reached the position of a team leader.  
+   At the same time I was always fond of technical issues and computer technologies. At some point, while dealing with Arduino, I came up with the idea that I lack coding skills and knowledge of algorithms. I started learning at various courses. That's when I fell in love with coding and solving various coding problems.  
+   At the moment I'm looking for a path to become a front-end developer. I want to work with the people, who loves, what they are doing, and who has great expertise in that,  who is eager to share their knowledge, but most of all I want to become one of them.  
 
 ## Skills and technologies
 - HTML5, CSS3
@@ -39,20 +41,20 @@ function spinWords(string){
   return phrase.join(" ");
 }
 ```
-More code examples can be found on [Codewars](https://www.codewars.com/users/m5production), and [GitHub](https://github.com/m5production).  
+More code examples can be found on *[Codewars](https://www.codewars.com/users/m5production)*, and *[GitHub](https://github.com/m5production)*.  
 
 ## Projects
-- [Design studio project](https://github.com/m5production/MarathonHTMLAcademy5) (training project)  
+- [Design studio project](https://github.com/m5production/MarathonHTMLAcademy5) (HTMLAcademy Marathone training project)  
 
 ## Courses and education
 - HTML5 and CSS3 training tasks and [Marathone](https://up.htmlacademy.ru/markup-marathon/1) (completed)
-- JavaScript via [The Modern JavaScript Tutorial](https://learn.javascript.ru/) (in progress)
-- RS Schools Course «JavaScript/Front-end 2022Q3» (in progress)
+- JavaScript via *[The Modern JavaScript Tutorial](https://learn.javascript.ru/)* (in progress)
+- RS Schools Course *JavaScript/Front-end 2022Q3* (in progress)
 - *Software testing* on [ULearnme](https://ulearn.me/) (completed)
 - *[Introduction to coding (C++)](/cpp-certificate.pdf)* on [Stepik](https://stepik.org/course/363/promo) (completed)
 
 ## Languages
 - Russian - Native
-- English - Advanced (according to the online test at [CEFR](https://www.efset.org/quick-check/))
-![English language certificate](english-certificate.png)
+- English - Advanced (according to the online test at [CEFR](https://www.efset.org/quick-check/))  
+[![English language certificate](english-certificate.png)](https://www.efset.org/quick-check/)  
 - French - Basic
