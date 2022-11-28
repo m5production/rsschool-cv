@@ -1,1 +1,1 @@
-https://m5production.github.io/rsschool-cv/
+https://github.com/m5production/rsschool-cv/blob/gh-pages/cv.md
