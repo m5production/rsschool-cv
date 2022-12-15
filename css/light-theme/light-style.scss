@@ -1,0 +1,78 @@
+.light {
+    //abstract
+    $link-hover-color-light: blue;
+    $main-font-color-light: black;
+    $main-bg-color-light: rgb(242, 168, 3);
+    $main-bg-grad-light: linear-gradient(156deg, rgba(242, 168, 3, 1) 44%, rgba(0, 212, 255, 1) 100%);
+
+    //body-styles
+    color: $main-font-color-light;
+    background-color: $main-bg-color-light;
+    background-image: $main-bg-grad-light;
+
+    a:hover {
+        color: $link-hover-color-light;
+    }
+    
+    //==========HEADER===========
+    $header-bg-color: green;
+    $header-font-color-light: white;
+    
+    .header-container {
+        background: $header-bg-color;
+    
+        .nav-list {
+            color: $header-font-color-light;
+        }
+    
+        .nav-item {
+            background: transparent;
+        }
+    }
+    
+    //==========MAIN=============
+    
+    .switch-to-normal-btn {
+        color: $main-font-color-light;
+    
+        &::before {
+            background-color: $main-font-color-light;
+            border-color: $main-font-color-light;
+            outline-color: $main-font-color-light;
+        }
+    }
+    
+    .main-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    //=========ABOUT============
+    
+    .about-section {
+        scrollbar-color: $main-bg-color-light;
+    
+        &::-webkit-scrollbar {
+            background-color: $main-bg-color-light;
+    
+            &-thumb {
+                background-color: $main-font-color-light;
+            }
+        }
+    }
+    
+    //=======CODE-EXAMPLE========
+    
+    .code-example {
+        scrollbar-color: $main-bg-color-light;
+    
+        &::-webkit-scrollbar {
+            background-color: $main-bg-color-light;
+    
+            &-thumb {
+                background-color: $main-font-color-light;
+            }
+        }
+    }
+}

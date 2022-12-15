@@ -9,14 +9,14 @@
     <title>CV Dmitry Mikheev Frontend-developer</title>
 </head>
 
-<body>
+<body class="body fallout">
     <header class="header">
         <div class="container header-container">
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
                     <li class="nav-item"><a href="#contact-info" class="nav-link">Contact info</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link ">About</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
                     <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
@@ -34,7 +34,8 @@
 
             <section class="section profile-section" id="profile">
                 <div class="profile-content-wrapper">
-                    <img class="my-pic" src="assets/images/my-photo.jpg" alt="Dmitry's photo">
+                    <img class="my-pic" id="my-pic-dark" src="assets/images/my-photo.jpg" alt="Dmitry's photo">
+                    <img class="my-pic-light" id="my-pic-light" src="assets/images/my-avatar.jpg" alt="Dmitry's photo" hidden>
                     <div class="profile-text-wrapper">
                         <h1 class="main-heading">Dmitry Mikheev</h1>
                         <h3 class="subtitle">junior frontend developer</h3>
@@ -111,7 +112,7 @@
                 <h2 class="section-title">Courses</h2>
                 <ul class="courses-list">
                     <li class="course-item"><a href="https://stepik.org/course/363/promo">Introduction to coding
-                            (C++)</a>(<a href="../rsschool-cv/assets/certificates/cpp-certificate.pdf">Certificate</a>)
+                            (C++)</a> (<a href="../rsschool-cv/assets/certificates/cpp-certificate.pdf">Certificate</a>)
                     </li>
                     <li><a href="https://ulearn.me/">Code basics using C# language</a></li>
                     <li class="course-item"><a href="https://rs.school/js-stage0/">JS/FE Pre-School 2022Q4</a>
@@ -149,6 +150,8 @@
                     alt="RSSchool logo" width="160" height="57"></a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
