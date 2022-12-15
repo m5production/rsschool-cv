@@ -1,3 +1,5 @@
+@import "../css/light-theme/light-style.scss"; //light-theme import
+
 @font-face {
     font-family: "Roboto";
     src: url("../assets/fonts/Roboto-Regular.ttf");
@@ -10,16 +12,108 @@
     font-weight: 700;
 }
 
-$link-hover-color: rgba(255, 255, 255, 0.562);
-$main-font-color: rgba(6, 255, 6, 0.5);
-$main-bg-color: rgba(31, 31, 31, 1);
+.fallout {
+    $link-hover-color: rgba(255, 255, 255, 0.562);
+    $main-font-color: rgba(6, 255, 6, 0.5);
+    $main-bg-color: rgba(31, 31, 31, 1);
+
+    color: $main-font-color;
+    background-color: $main-bg-color;
+
+    a:hover {
+        color: $link-hover-color;
+    }
+
+    //==========HEADER===========
+    $header-font-color: rgba(255, 255, 0, 0.82);
+
+    .header-container {
+        background-image: url("../assets/images/decorative/header-bg.png");
+    }
+
+    .nav-list {
+        color: $header-font-color;
+    }
+    
+    .nav-item {
+        background-image: url("../assets/images/decorative/header_btn_bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .nav-link {
+   
+        &::before {
+            content: url("../assets/images/decorative/header-btn-indicator.png");
+        }
+    
+        &:hover::before {
+            content: url("../assets/images/decorative/header-btn-indicator-light.png")
+        }
+    }
+    
+    //==========MAIN=============    
+    .switch-to-normal-btn {
+        color: $main-font-color;
+    
+        &::before {
+            background-color: $main-font-color;
+            border-color: $main-font-color;
+            outline-color: $main-font-color;
+        }
+    }
+    
+    .main-container {
+        border: 40px solid $main-bg-color;
+        border-image-source: url("../assets/images/decorative/screen-bg-img.png");
+        border-image-slice: 30 19 38 32;
+        border-image-repeat: stretch repeat;
+    }
+    
+    //========ABOUT============
+    
+    .about-section {
+        scrollbar-color: $main-bg-color;
+    
+        &::-webkit-scrollbar {
+            width: 8px;
+            background-color: $main-bg-color;
+    
+            &-thumb {
+                background-color: $main-font-color;
+                border: 1px solid transparent;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    //=======CODE-EXAMPLE========
+    
+    .code-example {
+        scrollbar-color: $main-bg-color;
+    
+        &::-webkit-scrollbar {
+            background-color: $main-bg-color;
+    
+            &-thumb {
+                background-color: $main-font-color;
+            }
+        }
+    }
+    
+    //=========FOOTER============
+    
+    .footer-container {
+        background-image: url("../assets/images/decorative/footer-bg-alternative.jpg");
+    }
+
+}
+
 $main-font-size: 23px;
 $main-line-height: 1.4;
 
 :root {
     scroll-behavior: smooth;
-    color: $main-font-color;
-    background-color: $main-bg-color;
     font-size: $main-font-size;
     line-height: $main-line-height;
 }
@@ -32,15 +126,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: "Roboto", sans-serif;
-    background-color: $main-bg-color;
 }
 
 a {
     color: inherit;
-
-    &:hover {
-        color: $link-hover-color;
-    }
 }
 
 .container {
@@ -52,12 +141,6 @@ a {
 
 //==========HEADER===========
 
-$header-font-color: rgba(255, 255, 0, 0.82);
-
-.header-container {
-    background-image: url("../assets/images/decorative/header-bg.png");
-}
-
 .nav-list {
     margin: 0;
     padding: 0;
@@ -67,15 +150,11 @@ $header-font-color: rgba(255, 255, 0, 0.82);
     flex-wrap: wrap;
     font-size: 1.5rem;
     list-style: none;
-    color: $header-font-color;
     font-weight: 700;
 }
 
 .nav-item {
     position: relative;
-    background-image: url("../assets/images/decorative/header_btn_bg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .nav-link {
@@ -85,15 +164,10 @@ $header-font-color: rgba(255, 255, 0, 0.82);
     color: inherit;
 
     &::before {
-        content: url("../assets/images/decorative/header-btn-indicator.png");
+        position: relative;
         height: 17px;
         width: 17px;
         padding-right: 10px;
-        position: relative;
-    }
-
-    &:hover::before {
-        content: url("../assets/images/decorative/header-btn-indicator-light.png")
     }
 }
 
@@ -106,7 +180,6 @@ $main-container-gap: 20px;
     right: 100px;
     background-color: transparent;
     border-color: transparent;
-    color: $main-font-color;
     cursor: pointer;
 
     &::before {
@@ -117,12 +190,11 @@ $main-container-gap: 20px;
         transform: translateX(-50%);
         width: 20px;
         height: 20px;
-        background-color: $main-font-color;
         background-clip: content-box;
         padding: 20px;
-        border: 2px solid $main-font-color;
+        border: 2px solid transparent;
         border-radius: 50%;
-        outline: 2px solid $main-font-color;
+        outline: 2px solid transparent;
         outline-offset: -12px;
     }
 }
@@ -132,10 +204,7 @@ $main-container-gap: 20px;
     display: flex;
     gap: $main-container-gap;
     flex-wrap: wrap;
-    border: 40px solid $main-bg-color;
-    border-image-source: url("../assets/images/decorative/screen-bg-img.png");
-    border-image-slice: 30 19 38 32;
-    border-image-repeat: stretch repeat;
+    border: 40px solid transparent;
 }
 
 .section {
@@ -174,25 +243,28 @@ $main-container-gap: 20px;
     flex-shrink: 1;
 }
 
+.my-pic-light{
+    order: 1;
+    max-width: 100%;
+    flex-shrink: 1;
+}
+
 //========CONTACTS===========
 
 .contact-section {
     align-self: center;
 }
 
-.about-section{
+.about-section {
     overflow: auto;
     max-height: 80vh;
 
-    scrollbar-color: $main-bg-color;
     scrollbar-width: thin;
 
     &::-webkit-scrollbar {
         width: 8px;
-        background-color: $main-bg-color;
 
-        &-thumb{
-            background-color: $main-font-color;
+        &-thumb {
             border: 1px solid transparent;
             border-radius: 5px;
         }
@@ -203,15 +275,12 @@ $main-container-gap: 20px;
 
 .code-example {
     overflow-x: auto;
-    scrollbar-color: $main-bg-color;
     scrollbar-width: thin;
 
     &::-webkit-scrollbar {
         height: 8px;
-        background-color: $main-bg-color;
 
-        &-thumb{
-            background-color: $main-font-color;
+        &-thumb {
             border: 1px solid transparent;
             border-radius: 5px;
         }
@@ -225,7 +294,6 @@ $main-container-gap: 20px;
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
-    background-image: url("../assets/images/decorative/footer-bg-alternative.jpg");
 }
 
 //======MEDIA-QUERIES========
@@ -237,7 +305,7 @@ $main-container-gap: 20px;
         width: 100%;
     }
 
-    .profile-section{
+    .profile-section {
         margin-top: $h1-margin-top;
     }
 
