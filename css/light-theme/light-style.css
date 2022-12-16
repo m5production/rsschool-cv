@@ -1,15 +1,17 @@
 .light {
   color: black;
-  background-color: rgb(242, 168, 3);
-  background-image: linear-gradient(156deg, rgb(242, 168, 3) 44%, rgb(0, 212, 255) 100%);
+  background-color: rgb(75, 164, 238);
+  background-image: linear-gradient(342deg, rgb(75, 164, 238) 28%, rgb(250, 243, 243) 97%);
+  font-size: 28px;
 }
 .light a:hover {
-  color: blue;
+  color: rgb(70, 70, 70);
 }
 .light .header-container {
-  background: green;
+  background: radial-gradient(circle, rgb(75, 164, 238) 88%, transparent 100%);
 }
 .light .header-container .nav-list {
+  justify-content: center;
   color: white;
 }
 .light .header-container .nav-item {
@@ -28,20 +30,20 @@
   display: flex;
   flex-wrap: wrap;
 }
-.light .about-section {
-  scrollbar-color: rgb(242, 168, 3);
+.light .about-text-wrapper {
+  scrollbar-color: rgb(75, 164, 238);
 }
-.light .about-section::-webkit-scrollbar {
-  background-color: rgb(242, 168, 3);
+.light .about-text-wrapper::-webkit-scrollbar {
+  background-color: rgb(75, 164, 238);
 }
-.light .about-section::-webkit-scrollbar-thumb {
+.light .about-text-wrapper::-webkit-scrollbar-thumb {
   background-color: black;
 }
 .light .code-example {
-  scrollbar-color: rgb(242, 168, 3);
+  scrollbar-color: rgb(75, 164, 238);
 }
 .light .code-example::-webkit-scrollbar {
-  background-color: rgb(242, 168, 3);
+  background-color: rgb(75, 164, 238);
 }
 .light .code-example::-webkit-scrollbar-thumb {
   background-color: black;
@@ -50,5 +52,5 @@
   border-color: black;
 }
 .light .lang-switch:hover {
-  border-color: blue;
+  border-color: rgb(70, 70, 70);
 }/*# sourceMappingURL=light-style.css.map */

@@ -46,14 +46,14 @@
   border-image-slice: 30 19 38 32;
   border-image-repeat: stretch repeat;
 }
-.fallout .about-section {
+.fallout .about-text-wrapper {
   scrollbar-color: rgb(31, 31, 31);
 }
-.fallout .about-section::-webkit-scrollbar {
+.fallout .about-text-wrapper::-webkit-scrollbar {
   width: 8px;
   background-color: rgb(31, 31, 31);
 }
-.fallout .about-section::-webkit-scrollbar-thumb {
+.fallout .about-text-wrapper::-webkit-scrollbar-thumb {
   background-color: rgba(6, 255, 6, 0.5);
   border: 1px solid transparent;
   border-radius: 5px;
