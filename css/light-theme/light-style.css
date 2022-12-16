@@ -45,4 +45,10 @@
 }
 .light .code-example::-webkit-scrollbar-thumb {
   background-color: black;
+}
+.light .lang-switch {
+  border-color: black;
+}
+.light .lang-switch:hover {
+  border-color: blue;
 }/*# sourceMappingURL=light-style.css.map */

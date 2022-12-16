@@ -46,17 +46,13 @@
 .light .code-example::-webkit-scrollbar-thumb {
   background-color: black;
 }
+.light .lang-switch {
+  border-color: black;
+}
+.light .lang-switch:hover {
+  border-color: blue;
+}
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../assets/fonts/Roboto-Regular.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../assets/fonts/Roboto-Bold.ttf");
-  font-weight: 700;
-}
 .fallout {
   color: rgba(6, 255, 6, 0.5);
   background-color: rgb(31, 31, 31);
@@ -76,10 +72,20 @@
   background-size: 100% 100%;
 }
 .fallout .nav-link::before {
-  content: url("../assets/images/decorative/header-btn-indicator.png");
+  content: "";
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  padding-right: 30px;
+  background: url("../assets/images/decorative/header-btn-indicator.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
 }
 .fallout .nav-link:hover::before {
-  content: url("../assets/images/decorative/header-btn-indicator-light.png");
+  background-image: url("../assets/images/decorative/header-btn-indicator-light.png");
 }
 .fallout .switch-to-normal-btn {
   color: rgba(6, 255, 6, 0.5);
@@ -119,7 +125,23 @@
 .fallout .footer-container {
   background-image: url("../assets/images/decorative/footer-bg-alternative.jpg");
 }
+.fallout .lang-switch {
+  border-color: rgba(6, 255, 6, 0.5);
+}
+.fallout .lang-switch:hover {
+  border-color: rgba(255, 255, 255, 0.562);
+}
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
 :root {
   scroll-behavior: smooth;
   font-size: 23px;
@@ -164,24 +186,20 @@ a {
 }
 
 .nav-link {
+  display: inline-block;
   padding: 0 10px;
   line-height: 40px;
   text-decoration: none;
   color: inherit;
 }
-.nav-link::before {
-  position: relative;
-  height: 17px;
-  width: 17px;
-  padding-right: 10px;
-}
 
 .switch-to-normal-btn {
   position: absolute;
-  top: 120px;
-  right: 100px;
+  top: 100px;
+  right: 50px;
   background-color: transparent;
   border-color: transparent;
+  font-size: inherit;
   cursor: pointer;
 }
 .switch-to-normal-btn::before {
@@ -284,12 +302,19 @@ a {
   padding: 20px 0;
 }
 
+.lang-switch {
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
 @media (max-width: 680px) {
   .section {
     width: 100%;
   }
   .profile-section {
-    margin-top: 50px;
+    margin-top: 80px;
   }
   .switch-to-normal-btn {
     top: 50px;
