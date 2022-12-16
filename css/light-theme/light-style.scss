@@ -13,66 +13,76 @@
     a:hover {
         color: $link-hover-color-light;
     }
-    
+
     //==========HEADER===========
     $header-bg-color: green;
     $header-font-color-light: white;
-    
+
     .header-container {
         background: $header-bg-color;
-    
+
         .nav-list {
             color: $header-font-color-light;
         }
-    
+
         .nav-item {
             background: transparent;
         }
     }
-    
+
     //==========MAIN=============
-    
+
     .switch-to-normal-btn {
         color: $main-font-color-light;
-    
+
         &::before {
             background-color: $main-font-color-light;
             border-color: $main-font-color-light;
             outline-color: $main-font-color-light;
         }
     }
-    
+
     .main-container {
         position: relative;
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     //=========ABOUT============
-    
+
     .about-section {
         scrollbar-color: $main-bg-color-light;
-    
+
         &::-webkit-scrollbar {
             background-color: $main-bg-color-light;
-    
+
             &-thumb {
                 background-color: $main-font-color-light;
             }
         }
     }
-    
+
     //=======CODE-EXAMPLE========
-    
+
     .code-example {
         scrollbar-color: $main-bg-color-light;
-    
+
         &::-webkit-scrollbar {
             background-color: $main-bg-color-light;
-    
+
             &-thumb {
                 background-color: $main-font-color-light;
             }
+        }
+    }
+
+    //========FOOTER=============
+
+    .lang-switch {
+        border-color: $main-font-color-light;
+
+        &:hover {
+            border-color: $link-hover-color-light;
         }
     }
 }

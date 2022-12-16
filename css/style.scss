@@ -1,4 +1,5 @@
 @import "../css/light-theme/light-style.scss"; //light-theme import
+@import "../css/fallout-theme/fallout-style.scss";//fallout-theme import
 
 @font-face {
     font-family: "Roboto";
@@ -12,102 +13,7 @@
     font-weight: 700;
 }
 
-.fallout {
-    $link-hover-color: rgba(255, 255, 255, 0.562);
-    $main-font-color: rgba(6, 255, 6, 0.5);
-    $main-bg-color: rgba(31, 31, 31, 1);
 
-    color: $main-font-color;
-    background-color: $main-bg-color;
-
-    a:hover {
-        color: $link-hover-color;
-    }
-
-    //==========HEADER===========
-    $header-font-color: rgba(255, 255, 0, 0.82);
-
-    .header-container {
-        background-image: url("../assets/images/decorative/header-bg.png");
-    }
-
-    .nav-list {
-        color: $header-font-color;
-    }
-    
-    .nav-item {
-        background-image: url("../assets/images/decorative/header_btn_bg.png");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-    
-    .nav-link {
-   
-        &::before {
-            content: url("../assets/images/decorative/header-btn-indicator.png");
-        }
-    
-        &:hover::before {
-            content: url("../assets/images/decorative/header-btn-indicator-light.png")
-        }
-    }
-    
-    //==========MAIN=============    
-    .switch-to-normal-btn {
-        color: $main-font-color;
-    
-        &::before {
-            background-color: $main-font-color;
-            border-color: $main-font-color;
-            outline-color: $main-font-color;
-        }
-    }
-    
-    .main-container {
-        border: 40px solid $main-bg-color;
-        border-image-source: url("../assets/images/decorative/screen-bg-img.png");
-        border-image-slice: 30 19 38 32;
-        border-image-repeat: stretch repeat;
-    }
-    
-    //========ABOUT============
-    
-    .about-section {
-        scrollbar-color: $main-bg-color;
-    
-        &::-webkit-scrollbar {
-            width: 8px;
-            background-color: $main-bg-color;
-    
-            &-thumb {
-                background-color: $main-font-color;
-                border: 1px solid transparent;
-                border-radius: 5px;
-            }
-        }
-    }
-    
-    //=======CODE-EXAMPLE========
-    
-    .code-example {
-        scrollbar-color: $main-bg-color;
-    
-        &::-webkit-scrollbar {
-            background-color: $main-bg-color;
-    
-            &-thumb {
-                background-color: $main-font-color;
-            }
-        }
-    }
-    
-    //=========FOOTER============
-    
-    .footer-container {
-        background-image: url("../assets/images/decorative/footer-bg-alternative.jpg");
-    }
-
-}
 
 $main-font-size: 23px;
 $main-line-height: 1.4;
@@ -158,17 +64,11 @@ a {
 }
 
 .nav-link {
+    display: inline-block;
     padding: 0 10px;
     line-height: 40px;
     text-decoration: none;
     color: inherit;
-
-    &::before {
-        position: relative;
-        height: 17px;
-        width: 17px;
-        padding-right: 10px;
-    }
 }
 
 //==========MAIN=============
@@ -176,10 +76,11 @@ $main-container-gap: 20px;
 
 .switch-to-normal-btn {
     position: absolute;
-    top: 120px;
-    right: 100px;
+    top: 100px;
+    right: 50px;
     background-color: transparent;
     border-color: transparent;
+    font-size: inherit;
     cursor: pointer;
 
     &::before {
@@ -243,7 +144,7 @@ $main-container-gap: 20px;
     flex-shrink: 1;
 }
 
-.my-pic-light{
+.my-pic-light {
     order: 1;
     max-width: 100%;
     flex-shrink: 1;
@@ -296,10 +197,17 @@ $main-container-gap: 20px;
     padding: 20px 0;
 }
 
+.lang-switch {
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
 //======MEDIA-QUERIES========
 
 @media (max-width: 680px) {
-    $h1-margin-top: 50px;
+    $h1-margin-top: 80px;
 
     .section {
         width: 100%;
