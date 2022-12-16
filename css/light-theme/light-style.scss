@@ -1,0 +1,92 @@
+.light {
+    //abstract
+    $link-hover-color-light: rgb(70, 70, 70);
+    $main-font-color-light: black;
+    $main-bg-color-light: rgb(75,164,238);
+    $main-bg-grad-light: linear-gradient(342deg, rgba(75,164,238,1) 28%, rgba(250,243,243,1) 97%);
+    $main-font-size: 28px;
+
+    //body-styles
+    color: $main-font-color-light;
+    background-color: $main-bg-color-light;
+    background-image: $main-bg-grad-light;
+    font-size: $main-font-size;
+    
+
+    a:hover {
+        color: $link-hover-color-light;
+    }
+
+    //==========HEADER===========
+    $header-bg-color: radial-gradient(circle, rgba(75,164,238,1) 88%, transparent 100%);
+    $header-font-color-light: white;
+
+    .header-container {
+        background: $header-bg-color;
+
+        .nav-list {
+            justify-content: center;
+            color: $header-font-color-light;
+        }
+
+        .nav-item {
+            background: transparent;
+        }
+    }
+
+    //==========MAIN=============
+
+    .switch-to-normal-btn {
+        color: $main-font-color-light;
+
+        &::before {
+            background-color: $main-font-color-light;
+            border-color: $main-font-color-light;
+            outline-color: $main-font-color-light;
+        }
+    }
+
+    .main-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    //=========ABOUT============
+
+    .about-text-wrapper {
+        scrollbar-color: $main-bg-color-light;
+
+        &::-webkit-scrollbar {
+            background-color: $main-bg-color-light;
+
+            &-thumb {
+                background-color: $main-font-color-light;
+            }
+        }
+    }
+
+    //=======CODE-EXAMPLE========
+
+    .code-example {
+        scrollbar-color: $main-bg-color-light;
+
+        &::-webkit-scrollbar {
+            background-color: $main-bg-color-light;
+
+            &-thumb {
+                background-color: $main-font-color-light;
+            }
+        }
+    }
+
+    //========FOOTER=============
+
+    .lang-switch {
+        border-color: $main-font-color-light;
+
+        &:hover {
+            border-color: $link-hover-color-light;
+        }
+    }
+}

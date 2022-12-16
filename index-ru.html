@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Дмитрий Михеев - Фронтэнд-разработчик</title>
+</head>
+
+<body class="body fallout">
+    <header class="header">
+        <div class="container header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#profile" class="nav-link">Профиль</a></li>
+                    <li class="nav-item"><a href="#contact-info" class="nav-link">Контакты</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link ">О себе</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Навыки</a></li>
+                    <li class="nav-item"><a href="#code-example" class="nav-link">Пример кода</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Образование</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Проекты</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Языки</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container main-container">
+
+            <button class="switch-to-normal-btn" id="switch-to-normal-btn" type="button">Вернуть нормальный вид</button>
+
+            <section class="section profile-section" id="profile">
+                <div class="profile-content-wrapper">
+                    <img class="my-pic" id="my-pic-dark" src="assets/images/my-photo.jpg" alt="Фото Дмитрия">
+                    <img class="my-pic-light" id="my-pic-light" src="assets/images/my-avatar.jpg" alt="Фото Дмитрия" hidden>
+                    <div class="profile-text-wrapper">
+                        <h1 class="main-heading">Дмитрий Михеев</h1>
+                        <h3 class="subtitle">начинающий фронтэнд-разработчик</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contact-section" id="contact-info">
+                <h2 class="section-title">Контакты</h2>
+                <ul class="contact-list">
+                    <li><a href="tel:+79085828296">+7 (908) 582-82-96</a></li>
+                    <li><a href="mailto:dimikh@mail.ru">dimikh@mail.ru</a></li>
+                    <li><a href="https://t.me/m5production86">Telegram</a></li>
+                    <li><a href="https://github.com/m5production">GitHub</a></li>
+                </ul>
+            </section>
+
+            <section class="section" id="skills">
+                <h2 class="section-title">Навыки</h2>
+                <ul class="skill-list">
+                    <li class="skill-item">HTML5</li>
+                    <li class="skill-item">CSS</li>
+                    <li class="skill-item">SASS</li>
+                    <li class="skill-item">JS</li>
+                    <li class="skill-item">Git</li>
+                    <li class="skill-item">C++</li>
+                    <li class="skill-item">C#</li>
+                </ul>
+            </section>
+
+            <section class="section about-section" id="about">
+                <h2 class="section-title">О себе</h2>
+                <p class="about-text">Привет! <br> Я 10 лет проработал техническим переводчиком на оборонном предприятии <a href="http://vniitf.ru/en">ФГУП "РФЯЦ-ВНИИТФ"</a>. Сейчас я хотел бы найти профессию, которая бы давала больше свободы при выборе места проживания, работу, которая была бы мне интересна, работу, которая бы ставила передо мной множество новых увлекательных задач. Я знаю, что именно такую работу я могу найти в IT.</p>
+                <p class="about-text">Я люблю искать пути сделать что-нибудь новенькое и &quot; вдохнуть в это жизнь&quot;. Сначала я увлекался конструктором Arduino, в котором требуется писать простые программы на С++, чтобы запустить собранные электрические схемы. Я быстро пришел к мысли, что мне необходимо получить некоторую базу в области программирования и создания алгоритмов, что я и сделал, воспользовавшись курсами от Yandex на платформе Stepik. Мне и раньше нравилось программировать и решать интересные задачи, по этой причине я решил развиваться дальше.</p>
+                <p class="about-text">Меня интересовали и другие языки. Так я познакомился с C# благодаря платформе <a
+                        href="https://ulearn.me/">ULearn.me</a>.</p>
+                <p class="about-text">В какой-то момент я узнал про <a href="https://rs.school/">RSSchool</a> и пошел учиться на предлагаемые там курсы.</p>
+            </section>
+
+            <section class="section" id="code-example">
+                <h2 class="section-title">Пример кода</h2>
+
+                <pre class="code-example">
+    <code>function spinWords(string){
+    
+    let phrase = string.split(" ");
+                        
+    for (let word = 0; word &lt; phrase.length; word++){
+    if(phrase[word].length &gt;&equals; 5)
+        phrase[word] &equals; 
+        phrase[word]
+        .split("")
+        .reverse()
+        .join("");
+        }
+                        
+        return phrase.join(" ");
+    }</code>
+            </pre>
+            </section>
+
+            <section class="section" id="courses">
+                <h2 class="section-title">Образование</h2>
+                <ul class="courses-list">
+                    <li class="course-item"><a href="https://stepik.org/course/363/promo">Введение в программирование
+                            (C++)</a> (<a href="../rsschool-cv/assets/certificates/cpp-certificate.pdf">Certificate</a>)
+                    </li>
+                    <li><a href="https://ulearn.me/">Основы программирования на примере языка C# </a></li>
+                    <li class="course-item"><a href="https://rs.school/js-stage0/">JS/FE Pre-School 2022Q4</a>
+                        (в процессе)</li>
+                </ul>
+            </section>
+
+            <section class="section" id="projects">
+                <h2 class="section-title">Проекты</h2>
+                <ul class="project-list">
+                    <li class="project-item"><a
+                            href="https://rolling-scopes-school.github.io/m5production-JSFE2022Q3/pages/main/">Online-zoo
+                            (проект, сделанный в рамках курса RSSchool JS/FE Stage1 2022Q3)</a></li>
+                    <li class="project-item"><a href="https://up.htmlacademy.ru/markup-marathon/1"> Учебный марафон по развитию навыков HTML5 и CSS3
+                            </a> (<a href="https://m5production.github.io/MarathonHTMLAcademy5/">Вот что получилось</a>)</li>
+                </ul>
+            </section>
+
+            <section class="section" id="languages">
+                <h2 class="section-title">Языки</h2>
+                <ul class="language-list">
+                    <li class="language-item">Английский - Продвинуты (по оценке на портале <a
+                            href="https://www.efset.org/quick-check/">CEFR</a>)</li>
+                    <li class="language-item">Французский - Базовый</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">2022
+            <a class="lang-switch" href="index.html">EN</a>
+            <a class="git-hub-link" href="https://github.com/m5production">Мой GitHub</a>
+            <a class="rsschool-link" href="https://rs.school/js/"><img src="assets/images/rs_school_js_logo.svg"
+                    alt="RSSchool logo" width="160" height="57"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

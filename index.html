@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CV Dmitry Mikheev Frontend-developer</title>
+</head>
+
+<body class="body fallout">
+    <header class="header">
+        <div class="container header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a href="#contact-info" class="nav-link">Contact info</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link ">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container main-container">
+
+            <button class="switch-to-normal-btn" id="switch-to-normal-btn" type="button">Turn to normal view</button>
+
+            <section class="section profile-section" id="profile">
+                <div class="profile-content-wrapper">
+                    <img class="my-pic" id="my-pic-dark" src="assets/images/my-photo.jpg" alt="Dmitry's photo">
+                    <img class="my-pic-light" id="my-pic-light" src="assets/images/my-avatar.jpg" alt="Dmitry's photo"
+                        hidden>
+                    <div class="profile-text-wrapper">
+                        <h1 class="main-heading">Dmitry Mikheev</h1>
+                        <h3 class="subtitle">junior frontend developer</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contact-section" id="contact-info">
+                <h2 class="section-title">Contact info</h2>
+                <ul class="contact-list">
+                    <li><a href="tel:+79085828296">+7 (908) 582-82-96</a></li>
+                    <li><a href="mailto:dimikh@mail.ru">dimikh@mail.ru</a></li>
+                    <li><a href="https://t.me/m5production86">Telegram</a></li>
+                    <li><a href="https://github.com/m5production">GitHub</a></li>
+                </ul>
+            </section>
+
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skill-list">
+                    <li class="skill-item">HTML5</li>
+                    <li class="skill-item">CSS</li>
+                    <li class="skill-item">SASS</li>
+                    <li class="skill-item">JS</li>
+                    <li class="skill-item">Git</li>
+                    <li class="skill-item">C++</li>
+                    <li class="skill-item">C#</li>
+                </ul>
+            </section>
+
+            <section class="section about-section" id="about">
+                <h2 class="section-title">About</h2>
+                <div class="about-text-wrapper">
+                    <p class="about-text">Hi there! <br>I've been working as a technical interpreter and translator for
+                        10
+                        years in <a href="http://vniitf.ru/en">Nuclear physics institute</a> and now
+                        I'm
+                        looking for a job, that would allow me not to be glued to one location, the one interesting to
+                        me,
+                        the one that concerns dealing with new challenges. For me it is coding.</p>
+                    <p class="about-text">I'm fond of learning, how to do new stuff and make it work. At first I was
+                        dealing
+                        with Arduino,
+                        where I needed to make up some simple programs to make my newly-built electric circuits work,
+                        that
+                        required knowledge of C++. To improve my C++ coding and algorithm creation skills I've passed
+                        Yandex
+                        course on Stepik. I liked coding practice and problem solving very much and came with a decision
+                        to
+                        go further.</p>
+                    <p class="about-text">I was interested in other languages as well. I dealt whith C# on <a
+                            href="https://ulearn.me/">ULearn.me</a>.</p>
+                    <p class="about-text">Finally I've heard about <a href="https://rs.school/">RSSchool</a>, and joined
+                        its
+                        frontend training
+                        courses.</p>
+                </div>
+            </section>
+
+            <section class="section" id="code-example">
+                <h2 class="section-title">Code example</h2>
+
+                <pre class="code-example">
+    <code>function spinWords(string){
+    
+    let phrase = string.split(" ");
+                        
+    for (let word = 0; word &lt; phrase.length; word++){
+    if(phrase[word].length &gt;&equals; 5)
+        phrase[word] &equals; 
+        phrase[word]
+        .split("")
+        .reverse()
+        .join("");
+        }
+                        
+        return phrase.join(" ");
+    }</code>
+            </pre>
+            </section>
+
+            <section class="section" id="courses">
+                <h2 class="section-title">Courses</h2>
+                <ul class="courses-list">
+                    <li class="course-item"><a href="https://stepik.org/course/363/promo">Introduction to coding
+                            (C++)</a> (<a href="../rsschool-cv/assets/certificates/cpp-certificate.pdf">Certificate</a>)
+                    </li>
+                    <li><a href="https://ulearn.me/">Code basics using C# language</a></li>
+                    <li class="course-item"><a href="https://rs.school/js-stage0/">JS/FE Pre-School 2022Q4</a>
+                        (in-progress)</li>
+                </ul>
+            </section>
+
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul class="project-list">
+                    <li class="project-item"><a
+                            href="https://rolling-scopes-school.github.io/m5production-JSFE2022Q3/pages/main/">Online-zoo
+                            (project from RSSchool JS/FE Stage1 2022Q3)</a></li>
+                    <li class="project-item"><a href="https://up.htmlacademy.ru/markup-marathon/1">HTML5 and CSS3
+                            training matathone</a> (<a href="https://m5production.github.io/MarathonHTMLAcademy5/">My
+                            Result</a>)</li>
+                </ul>
+            </section>
+
+            <section class="section" id="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul class="language-list">
+                    <li class="language-item">English - Advanced (according to the online test at <a
+                            href="https://www.efset.org/quick-check/">CEFR</a>)</li>
+                    <li class="language-item">French - Basic</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">2022
+            <a class="lang-switch" href="index-ru.html">RU</a>
+            <a class="git-hub-link" href="https://github.com/m5production">My GitHub</a>
+            <a class="rsschool-link" href="https://rs.school/js/"><img src="assets/images/rs_school_js_logo.svg"
+                    alt="RSSchool logo" width="160" height="57"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

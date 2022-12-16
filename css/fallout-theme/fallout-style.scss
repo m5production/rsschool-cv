@@ -1,0 +1,114 @@
+.fallout {
+    $link-hover-color: rgba(255, 255, 255, 0.562);
+    $main-font-color: rgba(6, 255, 6, 0.5);
+    $main-bg-color: rgba(31, 31, 31, 1);
+
+    color: $main-font-color;
+    background-color: $main-bg-color;
+
+    a:hover {
+        color: $link-hover-color;
+    }
+
+    //==========HEADER===========
+    $header-font-color: rgba(255, 255, 0, 0.82);
+
+    .header-container {
+        background-image: url("../assets/images/decorative/header-bg.png");
+    }
+
+    .nav-list {
+        color: $header-font-color;
+    }
+
+    .nav-item {
+        background-image: url("../assets/images/decorative/header_btn_bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .nav-link {
+
+        &::before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 25px;
+            height: 25px;
+            padding-right: 30px;
+            background: url("../assets/images/decorative/header-btn-indicator.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: content-box;
+        }
+
+        &:hover::before {
+            background-image: url("../assets/images/decorative/header-btn-indicator-light.png")
+        }
+    }
+
+    //==========MAIN=============    
+    .switch-to-normal-btn {
+        color: $main-font-color;
+
+        &::before {
+            background-color: $main-font-color;
+            border-color: $main-font-color;
+            outline-color: $main-font-color;
+        }
+    }
+
+    .main-container {
+        border: 40px solid $main-bg-color;
+        border-image-source: url("../assets/images/decorative/screen-bg-img.png");
+        border-image-slice: 30 19 38 32;
+        border-image-repeat: stretch repeat;
+    }
+
+    //========ABOUT============
+
+    .about-text-wrapper {
+        scrollbar-color: $main-bg-color;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            background-color: $main-bg-color;
+
+            &-thumb {
+                background-color: $main-font-color;
+                border: 1px solid transparent;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    //=======CODE-EXAMPLE========
+
+    .code-example {
+        scrollbar-color: $main-bg-color;
+
+        &::-webkit-scrollbar {
+            background-color: $main-bg-color;
+
+            &-thumb {
+                background-color: $main-font-color;
+            }
+        }
+    }
+
+    //=========FOOTER============
+
+    .footer-container {
+        background-image: url("../assets/images/decorative/footer-bg-alternative.jpg");
+    }
+
+    .lang-switch{
+        border-color: $main-font-color;
+
+        &:hover {
+            border-color: $link-hover-color;
+        }
+    }
+
+}
