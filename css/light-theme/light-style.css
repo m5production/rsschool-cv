@@ -1,0 +1,56 @@
+.light {
+  color: black;
+  background-color: rgb(75, 164, 238);
+  background-image: linear-gradient(342deg, rgb(75, 164, 238) 28%, rgb(250, 243, 243) 97%);
+  font-size: 28px;
+}
+.light a:hover {
+  color: rgb(70, 70, 70);
+}
+.light .header-container {
+  background: radial-gradient(circle, rgb(75, 164, 238) 88%, transparent 100%);
+}
+.light .header-container .nav-list {
+  justify-content: center;
+  color: white;
+}
+.light .header-container .nav-item {
+  background: transparent;
+}
+.light .switch-to-normal-btn {
+  color: black;
+}
+.light .switch-to-normal-btn::before {
+  background-color: black;
+  border-color: black;
+  outline-color: black;
+}
+.light .main-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.light .about-text-wrapper {
+  scrollbar-color: rgb(75, 164, 238);
+}
+.light .about-text-wrapper::-webkit-scrollbar {
+  background-color: rgb(75, 164, 238);
+}
+.light .about-text-wrapper::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+.light .code-example {
+  scrollbar-color: rgb(75, 164, 238);
+}
+.light .code-example::-webkit-scrollbar {
+  background-color: rgb(75, 164, 238);
+}
+.light .code-example::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+.light .lang-switch {
+  border-color: black;
+}
+.light .lang-switch:hover {
+  border-color: rgb(70, 70, 70);
+}/*# sourceMappingURL=light-style.css.map */

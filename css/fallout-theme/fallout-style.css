@@ -1,0 +1,78 @@
+.fallout {
+  color: rgba(6, 255, 6, 0.5);
+  background-color: rgb(31, 31, 31);
+}
+.fallout a:hover {
+  color: rgba(255, 255, 255, 0.562);
+}
+.fallout .header-container {
+  background-image: url("../assets/images/decorative/header-bg.png");
+}
+.fallout .nav-list {
+  color: rgba(255, 255, 0, 0.82);
+}
+.fallout .nav-item {
+  background-image: url("../assets/images/decorative/header_btn_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fallout .nav-link::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  padding-right: 30px;
+  background: url("../assets/images/decorative/header-btn-indicator.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+}
+.fallout .nav-link:hover::before {
+  background-image: url("../assets/images/decorative/header-btn-indicator-light.png");
+}
+.fallout .switch-to-normal-btn {
+  color: rgba(6, 255, 6, 0.5);
+}
+.fallout .switch-to-normal-btn::before {
+  background-color: rgba(6, 255, 6, 0.5);
+  border-color: rgba(6, 255, 6, 0.5);
+  outline-color: rgba(6, 255, 6, 0.5);
+}
+.fallout .main-container {
+  border: 40px solid rgb(31, 31, 31);
+  border-image-source: url("../assets/images/decorative/screen-bg-img.png");
+  border-image-slice: 30 19 38 32;
+  border-image-repeat: stretch repeat;
+}
+.fallout .about-text-wrapper {
+  scrollbar-color: rgb(31, 31, 31);
+}
+.fallout .about-text-wrapper::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(31, 31, 31);
+}
+.fallout .about-text-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(6, 255, 6, 0.5);
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.fallout .code-example {
+  scrollbar-color: rgb(31, 31, 31);
+}
+.fallout .code-example::-webkit-scrollbar {
+  background-color: rgb(31, 31, 31);
+}
+.fallout .code-example::-webkit-scrollbar-thumb {
+  background-color: rgba(6, 255, 6, 0.5);
+}
+.fallout .footer-container {
+  background-image: url("../assets/images/decorative/footer-bg-alternative.jpg");
+}
+.fallout .lang-switch {
+  border-color: rgba(6, 255, 6, 0.5);
+}
+.fallout .lang-switch:hover {
+  border-color: rgba(255, 255, 255, 0.562);
+}/*# sourceMappingURL=fallout-style.css.map */
